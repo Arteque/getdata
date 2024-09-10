@@ -1,5 +1,5 @@
-const dotenv = require("dotenv").config()
-const getResult = require("./main.ts")
+// const dotenv = require("dotenv").config()
+const getResult = require("./index.ts")
 
 exports.handler =  async () => {
     //CORS
