@@ -1,5 +1,4 @@
 const puppeteer = require('puppeteer')
-import { title } from "process"
 import { Browser } from "puppeteer"
 
 // const url = 'https://books.toscrape.com'
@@ -34,4 +33,4 @@ const main = async () => {
     await browser.close()
 }
 
-main()
+export default main
