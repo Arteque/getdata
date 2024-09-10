@@ -11,7 +11,7 @@ exports.handler = async (event) => {
   }
 
   /// Crawling Target
-  const url = process.env.API_URL || "https://www.aponet.de/apotheke/notdienstsuche?tx_aponetpharmacy_search[action]=result&tx_aponetpharmacy_search[controller]=Search&tx_aponetpharmacy_search[search][plzort]=99867%2BGotha&tx_aponetpharmacy_search[search][date]=&tx_aponetpharmacy_search[search][street]=&tx_aponetpharmacy_search[search][radius]=25&tx_aponetpharmacy_search[search][lat]=&tx_aponetpharmacy_search[search][lng]=&tx_aponetpharmacy_search[token]=216823d96ea25c051509d935955c130fbc72680fc1d3040fe3f8ca0e25f9cd08&type=1981"
+  const url = "https://www.aponet.de/apotheke/notdienstsuche?tx_aponetpharmacy_search[action]=result&tx_aponetpharmacy_search[controller]=Search&tx_aponetpharmacy_search[search][plzort]=99867%2BGotha&tx_aponetpharmacy_search[search][date]=&tx_aponetpharmacy_search[search][street]=&tx_aponetpharmacy_search[search][radius]=25&tx_aponetpharmacy_search[search][lat]=&tx_aponetpharmacy_search[search][lng]=&tx_aponetpharmacy_search[token]=216823d96ea25c051509d935955c130fbc72680fc1d3040fe3f8ca0e25f9cd08&type=1981"
 
   // URL PARAMS for Farchant
   let params = {
