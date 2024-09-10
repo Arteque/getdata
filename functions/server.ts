@@ -1,8 +1,9 @@
+import { Context } from "@netlify/functions";
 import main from "./index";
 
-const getData = () => {
-    return main
+const getData = async () => {
+    await main()
+    console.log("Ok")
 }
 
-
-module.exports = {getData}
+export default getData
