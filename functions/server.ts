@@ -1,5 +1,5 @@
-import { Context } from "@netlify/functions";
-import main from "./index";
+const dotenv = require("dotenv").config()
+const getResult = require("./main.ts")
 
 exports.handler =  async () => {
     //CORS
@@ -12,7 +12,7 @@ exports.handler =  async () => {
 
     /// Crawling Target
     const url = process.env.API_URL || 'https://www.aponet.de/apotheke/notdienstsuche/gotha/%20/5'
-    let results = await main(url)
+    let results = await getResult.main(url)
 
     if (results.length) {
         return {
@@ -35,7 +35,6 @@ exports.handler =  async () => {
           },
         }
       }
-
 
 }
 

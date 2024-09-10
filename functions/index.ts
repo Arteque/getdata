@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer')
 import { Browser } from "puppeteer"
 
 
-const main = async (url) => {
+const main = async (url:any) => {
     const browser: Browser = await puppeteer.launch()
     
 
@@ -27,8 +27,8 @@ const main = async (url) => {
     }, url)
     
     return data
-    // console.log(data)
+    console.log(data)
     await browser.close()
 }
 
-export default main
+module.exports = { main }
