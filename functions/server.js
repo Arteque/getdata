@@ -35,7 +35,7 @@ exports.handler = async (event) => {
     }
   }
 
-  let results = await crawler.getResults(url, params)
+  let results = await crawler.getResults(url)
 
   if (results.length) {
     return {
