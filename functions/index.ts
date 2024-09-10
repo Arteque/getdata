@@ -1,10 +1,8 @@
 const puppeteer = require('puppeteer')
 import { Browser } from "puppeteer"
 
-// const url = 'https://books.toscrape.com'
-const url = 'https://www.aponet.de/apotheke/notdienstsuche/gotha/%20/5'
 
-const main = async () => {
+const main = async (url) => {
     const browser: Browser = await puppeteer.launch()
     
 
