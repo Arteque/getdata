@@ -1,4 +1,4 @@
-// const dotenv = require("dotenv").config()
+const dotenv = require("dotenv").config()
 const getResult = require("./index.ts")
 
 exports.handler =  async () => {
