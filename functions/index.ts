@@ -1,8 +1,10 @@
+"use strict"
+
 import puppeteer from 'puppeteer';
 import { Browser } from "puppeteer"
 
 
-const main = async (url:any) => {
+const getResults = async (url:any) => {
     const browser: Browser = await puppeteer.launch()
     
 
@@ -25,10 +27,8 @@ const main = async (url:any) => {
         }))
         return response
     }, url)
-    
-    return data
-    console.log(data)
     await browser.close()
+    return data
 }
 
-module.exports = { main }
+module.exports = { getResults }
